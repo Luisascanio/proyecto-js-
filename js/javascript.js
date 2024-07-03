@@ -1,6 +1,6 @@
-let intro = parseInt(alert("La busqueda del Alfajor legendario"))
-let intro2 = parseInt(alert("Selecciona el numero que corresponda a la accion que quieres tomar"))
-let Sipnosis = parseInt(alert("Sipnosis: tienes mucha hambre y todas las tiendas de tu pueblo estan cerradas pero escuchaste historias que existe una mazmorra en la que existe el alfajor legendario, tu objetivo es conseguirlo y saciar tu hambre"))
+let intro = alert("La busqueda del Alfajor legendario")
+let intro2 = alert("Selecciona el numero que corresponda a la accion que quieres tomar")
+let Sipnosis = alert("Sipnosis: tienes mucha hambre y todas las tiendas de tu pueblo estan cerradas pero escuchaste historias que existe una mazmorra en la que existe el alfajor legendario, tu objetivo es conseguirlo y saciar tu hambre")
 
 function datos () {
 let ingresaNombre = prompt("ingresa el nombre de tu personaje")
@@ -33,7 +33,7 @@ function primeraFase(){
             
                 switch (primeraFaseOpciones2){
                     case 1:
-                    alert("buscas en la sala")
+                    alert("buscas en la sala, encuentras el alfajor legendario estaba bien bueno. tu hambre ha sido saciada. eres feliz. FIN")
                     break;
                     case 2:
                     alert("te devuelves")
@@ -55,8 +55,11 @@ function primeraFase(){
                     }
                 } while (true);
                 switch (primeraFaseOpciones3){
-                    case 1
-                    :alert("buscas algo util")
+                    case 1:
+                    alert("buscas algo util pero no encuentras el alfajor")
+                    alert("vuelves por donde viniste")
+                    primeraFase()
+                
                     break;
                     case 2
                     :alert("te devuelves")
@@ -69,7 +72,7 @@ function primeraFase(){
                     break;
         }
         
-            alert("ingresa una opcion valida")
+           
             
         }
     
